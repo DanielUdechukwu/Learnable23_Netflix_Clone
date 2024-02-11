@@ -1,0 +1,452 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito Sans';
+  color: #fff;
+  background: #222;
+}
+
+header{
+  background: url('../Assets/Bg-header.png');
+}
+
+nav{
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 7rem;
+}
+
+.nav-btn{
+  display: flex;
+  gap: 1rem;
+}
+
+select {
+  padding: .5rem .1rem .5rem 1.2rem;
+  background-color: rgba(0, 0, 0, .75);
+  background-image: url("./Assets/outline_earth.svg");
+  background-size: .9rem;
+  background-repeat: no-repeat;
+  background-position: 0.2rem center;
+  font-size: .7rem;
+  color: #737373;
+  border: 1px solid #737373;
+  border-radius: 2px;
+  outline: none;
+  font-weight: 700;
+  font-family: 'Nunito Sans';
+}
+
+.btn{
+  padding: .45rem 1.3rem;
+  border: none;
+  border-radius: 2px;
+  outline: none;
+  background: #e50914;
+  color: #fff;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background: #f40612;
+  transition: all ease-in-out 0.1s;
+}
+
+.hero-section{
+  padding: 6rem 0;
+}
+
+.hero-text h1{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero-text{
+  width: 40%;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+}
+
+.newsletter{
+  width: 40%;
+  display: flex;
+  margin: 0 auto;
+}
+
+.input-div{
+  width: 70%;
+  height: 3.5rem;
+}
+
+.button-div{
+  width: 30%;
+  height: 3.5rem;
+}
+
+.newsletter input{
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 0 5%;
+  height: 100%;
+  border-radius: 2px 0 0 2px;
+  font-family: 'Nunito Sans';
+  font-weight: 600;
+  font-size: .7rem;
+}
+
+.btnn {
+  height: 100%;
+  border-radius: 0 2px 2px 0;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #e50914;
+  color: #fff;
+  font-family: 'Nunito Sans';
+  padding: 0 5%;
+  font-size: 1rem;
+}
+
+.btnn:hover{
+  cursor: pointer;
+}
+
+.btn-content{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-arrow{
+  width: .4rem;
+}
+
+.highlight-1,
+.highlight-2,
+.highlight-3,
+.highlight-4{
+  background: #000;
+  padding-bottom: 2rem;
+}
+
+.platforms,
+.downloads,
+.devices,
+.kids{
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: .4rem auto 0 auto;
+}
+
+.platform-img img,
+.downloads-img img,
+.devices-img img,
+.kids-img img{
+  width: 100%;
+}
+
+.description h2{
+  font-size: 2.5rem;
+  padding-bottom: .5rem;
+}
+
+.description h3{
+  width: 70%;
+  font-weight: 400;
+}
+
+.FAQ{
+  background: #000;
+  margin: .4rem auto 0 auto;
+  padding-bottom: 3rem;
+}
+
+.FAQ h2{
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 2rem;
+}
+
+.accordion-main{
+  padding-bottom: 2rem;
+}
+
+.accordion-div{
+  width: 50%;
+  margin: .5rem auto;
+}
+
+.accordion{
+  width: 100%;
+  text-align: left;
+  padding: .7rem;
+  /* margin-bottom: 1rem; */
+  border: none;
+  outline: none;
+  background: #303030;
+  color: #fff;
+  position: relative;
+  transition: ease .2s;
+}
+
+.accordion:hover{
+  cursor: pointer;
+  background: #222;
+}
+
+.accordion::after{
+  content: '+';
+  position: absolute;
+  right: 0;
+  bottom: 0.5rem;
+  padding-right: 1rem;
+  font-size: 1.3rem;
+}
+
+.panel{
+  padding: .7rem;
+  display: none;
+  background-color: #222;
+  overflow: hidden;
+  transition: 1s;
+}
+
+.accordion.active::after{
+  content: '-';
+  right: .2rem;
+}
+
+.membership h5{
+  width: 40%;
+  margin: 0 auto;
+  font-size: .7rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  background: #000;
+  color: #737373;
+  padding-bottom: 2rem;
+  margin-top: .4rem;
+}
+
+.container-ft {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.phone h4 {
+  padding: 1rem 0;
+  font-size: .8rem;
+}
+
+.options-ft {
+  display: flex;
+  margin: 1rem 0;
+}
+
+.phone h4:hover,
+.options-ft h4:hover{
+  text-decoration: underline;
+  transition: all ease-in-out .1s;
+  cursor: pointer;
+}
+
+.col {
+  width: 25%;
+}
+
+.col h4 {
+  margin-bottom: .8rem;
+  font-size: .8rem;
+}
+
+@media (min-width: 1440px){
+  .platforms,
+  .downloads,
+  .devices,
+  .kids {
+    width: 60%;
+  }
+  .accordion-div{
+    width: 40%;
+  }
+}
+
+@media (max-width: 949px){
+  .select{
+    display: none;
+  }
+  nav{
+    padding: 2rem 2.5rem;
+  }
+  .hero-text{
+    width: 70%;
+  }
+  .hero-text h4{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    font-weight: 400;
+  }
+  .hero-text h5{
+    font-size: 1.3rem;
+    font-weight: 400;
+    width: 65%;
+    margin: 0 auto;
+  }
+  .newsletter{
+    width: 55%;
+    flex-direction: column;
+  }
+  .input-div{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .button-div{
+    margin: 0 auto;
+    height: 2.5rem;
+    width: 8rem;
+  }
+  .input-div input{
+    border-radius: 2px;
+  }
+  .btnn{
+    border-radius: 2px;
+  }
+  .platforms,
+  .devices{
+    flex-direction: column;
+    padding: 4rem 0 1rem 0;
+  }
+  .downloads,
+  .kids{
+    flex-direction: column-reverse;
+    padding: 4rem 0 1rem 0;
+  }
+  .description h2{
+    text-align: center;
+  }
+  .description h3{
+    text-align: center;
+    width: 100%;
+  }
+  .FAQ{
+    padding-top: 1.5rem;
+  }
+  .FAQ h2{
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+  }
+  .accordion-div{
+    width: 80%;
+  }
+  .accordion{
+    padding: 1rem .7rem;
+  }
+  .accordion::after{
+    bottom: 0.8rem;
+  }
+  .membership h5{
+    font-size: 1.3rem;
+    width: 50%;
+  }
+  .container-ft{
+    width: 80%;
+  }
+}
+
+@media (max-width: 549px) {
+  nav{
+    padding: 1.5rem 5%;
+  }
+  .logo{
+    width: 5rem;
+    margin-left: .5rem;
+  }
+  .btn{
+    padding: .3rem .5rem;
+  }
+  .hero-section{
+    padding: 3rem 0;
+  }
+  .hero-text{
+    width: 95%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .hero-text h1{
+    font-size: 1.7rem;
+    padding-bottom: .6rem;
+  }
+  .hero-text h4{
+    font-size: 1rem;
+  }
+  .hero-text h5{
+    font-size: 1rem;
+    width: 70%;
+  }
+  .newsletter{
+    width: 90%;
+  }
+  .input-div{
+    height: 3rem;
+  }
+  .platforms,
+  .downloads,
+  .devices,
+  .kids{
+    width: 90%;
+  }
+  .description h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .description h3{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .FAQ h2{
+    font-size: 1.5rem;
+  }
+  .accordion-main{
+    padding-bottom: 1rem;
+  }
+  .accordion{
+    font-size: 1rem;
+  }
+  .accordion-div{
+    width: 100%;
+  }
+  .membership h5{
+    width: 75%;
+    font-size: .9rem;
+  }
+  .phone h4{
+    padding: 3rem 0 1rem 0;
+  }
+  .options-ft{
+    flex-wrap: wrap;
+  }
+  .col{
+    width: 33%;
+  }
+}

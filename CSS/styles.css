@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@300;400;600;700;800&family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+body{
+  background: url("../Assets/Bg-header.png");
+  /* height: 100vh; *Change* */
+  opacity: 1;
+  font-family: 'Nunito Sans';
+  font-weight: 700;
+}
+
+.container{
+  margin-bottom: 5rem;
+}
+
+header{
+  padding: 1rem 3rem;
+  /* Made a change for bigger screen */
+  margin-bottom: 2.6rem;
+}
+
+.logo{
+  width: 7rem;
+}
+
+.form-section{
+  width: 30%;
+  margin: 0 auto;
+  color: #fff;
+  background-color: rgba(0, 0, 0, .75);
+  border-radius: 6px;
+  padding: 3rem 4rem;
+}
+
+.form-heading{
+  font-size: 2.2rem;
+  padding-bottom: 1rem;
+  font-weight: 800;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field{
+  height: 3rem;
+  background: #333;
+  border: none;
+  outline: none;
+  margin: .5rem 0;
+  border-radius: 4px;
+  padding: 0 1rem;
+  color: #fff;
+}
+
+.btn{
+  height: 2.7rem;
+  background: #e50914;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  margin: 2rem 0 .8rem 0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: 'Nunito Sans';
+}
+
+.btn:hover{
+  cursor: pointer;
+  background: #f40612;
+  transition: all ease-in-out 0.1s;
+}
+
+.options{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.remember-me input{
+  accent-color: #b3b3b3;
+}
+
+.remember-me label{
+  font-size: .9rem;
+  padding-left: .2rem;
+  color: #b3b3b3;
+}
+
+.help a{
+  color: #b3b3b3;
+  font-size: .8rem;
+}
+
+.social a{
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.social a:hover{
+  text-decoration: none;
+}
+
+.social p{
+  font-size: .7rem;
+  color: #737373;
+}
+
+.facebook{
+  width: 1rem;
+}
+
+.signup h4{
+  margin-bottom: 1rem;
+  color: #737373;
+  font-size: .8rem;
+}
+
+.signup > h4 > a{
+  color: #fff;
+}
+
+.signup p{
+  font-size: .7rem;
+  color: #737373;
+}
+
+/* Footer Section */
+footer{
+  background-color: rgba(0, 0, 0, .75);
+  color: #737373;
+  padding-bottom: 2rem;
+}
+
+.container-ft{
+  width: 60%;
+  margin: 0 auto;
+}
+
+.phone h4{
+  padding: 1rem 0;
+  font-size: .8rem;
+}
+
+.phone h4:hover,
+.options-ft h4:hover {
+  text-decoration: underline;
+  transition: all ease-in-out .1s;
+  cursor: pointer;
+}
+
+.options-ft{
+  display: flex;
+  margin: 1rem 0;
+}
+
+.options-ft > div{
+  width: 25%;
+}
+
+.col h4{
+  margin-bottom: .8rem;
+  font-size: .8rem;
+}
+
+select {
+  padding: .8rem .2rem .8rem 2rem;background-color: rgba(0, 0, 0, .75);
+  background-image: url("../Assets/outline_earth.svg");
+  background-repeat: no-repeat;
+  background-position: 0.4em center;
+  font-size: .8rem;
+  color: #737373;
+  border: 1px solid #737373;
+  border-radius: 2px;
+  outline: none;
+  font-weight: 700;
+  font-family: 'Nunito Sans';
+}
+
+
+/* Media Query */
+
+@media(max-width: 1200px){
+  .form-section{
+    width: 35%;
+  }
+}
+
+@media (max-width: 1024px) and (min-width: 740px) {
+  .form-section{
+    width: 50%;
+  }
+  .container-ft{
+    width: 80%;
+  }
+}
+
+@media (max-width: 739px){
+  body{
+    background: #222;
+  }
+  header{
+    padding: 1.5rem;
+    background: #000;
+  }
+  .logo{
+    width: 10rem;
+  }
+  .form-section{
+    width: 100%;
+    border-radius: 0;
+    padding: 3rem 2.2rem;
+  }
+  .container{
+    margin-bottom: 0;
+    padding-bottom: 4rem;
+    background: #000;
+  }
+  .container-ft{
+    width: 90%;
+    padding-top: 2rem;
+  }
+  footer{
+    background: #000;
+    margin-top: .2rem;
+  }
+  select{
+    display: none;
+  }
+}
+
+@media (max-width: 500px){
+  header{
+    padding: 1.3rem .8rem;
+  }
+  .logo{
+    width: 5rem;
+  }
+  .form-section{
+    padding: 4rem 1.5rem;
+  }
+  .phone h4{
+    font-size: 1rem;
+    padding: 1.5rem 0;
+  }
+  .options{
+    padding-bottom: 2rem;
+  }
+  .options-ft > div{
+    width: 50%;
+  }
+  .options-ft{
+    flex-wrap: wrap;
+  }
+  .col h4{
+    padding-bottom: 1rem;
+  }
+}
